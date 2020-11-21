@@ -1,0 +1,20 @@
+.graph_card{
+    box-shadow: 0 0 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px 0px;
+}
+.info_container{
+padding-left: 24px;
+}
+.heading{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.sub_heading{
+    font-size: 16px;
+}
+.count{
+    font-size: 24px;
+}

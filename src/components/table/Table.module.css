@@ -1,0 +1,36 @@
+.table_container{
+    padding: 40px;
+        box-shadow: 0 0 10px;
+        margin: 50px;
+}
+
+.table_container p{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.table_container table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+ .table_container td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  .table_container label {
+    cursor: pointer;
+  }
+ .country_name{
+     color: #759DDA;
+ }
+ .text_field{
+     margin-bottom: 12px;
+ }
+ .text_field input{
+    padding: 6px 0px;
+    width: 20%;
+ }
