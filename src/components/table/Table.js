@@ -40,6 +40,7 @@ class Table extends React.Component {
 
     };
     loadMoreData() {
+        console.log('djfd')
         const data = this.state.filteredCountriesData;
         const slice = data.slice(this.state.offset, this.state.offset + this.state.perPage)
         this.setState({
@@ -70,6 +71,7 @@ class Table extends React.Component {
 
     render() {
         const { searchItems, fieldToSort, isAscending, tableData } = this.state
+        console.log('fff', this.state.currentPage)
         return (
             <React.Fragment>
                 <div className={styles.table_container}>
@@ -78,7 +80,7 @@ class Table extends React.Component {
                         <input type="text" placeholder="Search" onChange={(event) => this.handleUserInput(event)}></input>
                         {tableData.length < 1 && <div>No result found for {searchItems}</div>}
                     </div>
-                    {tableData.length > 0 && <div>
+                    <div>
                         <table>
                             <thead>
                                 <tr>
@@ -167,7 +169,7 @@ containerClassName={"pagination"}
 subContainerClassName={"pages pagination"}
 activeClassName={"active"}/>
             
-                     </div>}
+                     </div>
                 </div>
              </React.Fragment>
          )
